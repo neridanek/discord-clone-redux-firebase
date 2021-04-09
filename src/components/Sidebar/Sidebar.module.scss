@@ -1,0 +1,76 @@
+.sidebar{
+    display:flex;
+    flex:0.25;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #23272a;
+    
+    &Top{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        font-weight: bold;
+        color:white;
+        border-bottom:3px solid #26282c;
+        
+    }
+    &Header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:10px;
+        color:gray;
+        &Channel{
+            display:flex;
+            align-items: center;
+            color:gray;
+        }
+    }
+    &Channels{
+        flex:1;
+    }
+    &Voice{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:15px;
+        border-top:1px solid gray;
+        color:gray;
+        p{
+            font-size: smaller;
+        }
+        h3{
+            color:green;
+        }
+        &Icon{
+            color:green;
+        }
+        &Info{
+            flex:1;
+            padding:10px;
+        }
+        &Icons {
+            &1,&2{
+                padding: 10px;
+            }
+        }
+    }
+    &Profile{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:10px;
+        border-top:1px solid gray;
+        color:gray;
+        &Info{
+            flex:1;
+            padding: 10px;
+        }
+        &Icons{
+            &1,&2,&3{
+                padding:10px;
+            }
+        }
+    }
+}

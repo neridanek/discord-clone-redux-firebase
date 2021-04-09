@@ -1,0 +1,46 @@
+::-webkit-scrollbar{
+    display:none;
+  }
+.chat{
+    display:flex;
+    flex:0.75;
+    flex-direction: column;
+    height: 100vh;
+    background-color:#2c2f33;
+    &Input{
+        color:lightgray;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        border-radius: 5px;
+        margin: 20px;
+        border-top:1px solid gray;
+        background-color: #474b53;
+        button{
+            display:none;
+        }
+        input{
+            padding: 15px;
+            background: transparent;
+            border:none;
+            outline-width: 0;
+            color:white;
+            font-size: large;
+            width: 100%;
+           
+        }
+        form{
+            flex:1;
+        }
+        &Icon{
+            &1,&2,&3{
+                padding: 5px;
+            }
+        }
+    }
+    &Messages{
+        flex:1;
+        overflow: scroll;
+    }
+}
